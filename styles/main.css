@@ -1,0 +1,123 @@
+
+
+.hero-container {
+    background-image: url(/images/Oval.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: var(--peach);
+    color: var(--white);
+    padding-block: 5.125rem;
+
+    overflow-y: hidden;
+
+    min-height: 843px;
+    padding-inline: 1.5rem;
+    /* background: black; */
+    text-align: center;
+
+    display: flex;
+}
+
+.hero-container > * {
+    flex: 1;
+}
+
+.hero-container .hero-description-cta h1 {
+    margin-block-end: 1.8125rem;
+}
+
+.hero-container .hero-description-cta p {
+    margin-block-end: 2.6125rem;
+}
+
+
+.hero-container .hero-image {
+    position: absolute;
+    margin: 0 auto; 
+    bottom: -206px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.hero-container .hero-image img {
+    max-width: 284px;
+    min-height: 573px;
+    filter:  drop-shadow(6px -10px 13px var(--black));
+
+}
+
+.skill-set-container {
+    padding-block: 3.875rem;
+    padding-inline: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skill-set-container .skill {
+    text-align: center;
+    margin-bottom: 5.3125rem;
+}
+
+.skill-set-container .skill:last-child {
+    margin-bottom: unset;
+}
+
+.skill-set-container .skill img {
+    max-width: 202px;
+    margin-bottom: 3.375rem;
+}
+
+.skill-set-container .skill h2 {
+    margin-bottom: 2.5625rem;
+}
+
+.project-container {
+    padding-inline: 1.5rem  ;
+    padding-block-start: 7.5rem;
+    padding-block-end: 3.75rem;
+    display: grid;
+    place-items: center;
+
+    gap: 1.4375rem;
+
+}
+
+.project-container .project {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+}
+
+.project-container .project img {
+   filter: blur(0.03em) grayscale(90%) brightness(70%);
+   width: 100%;
+}
+
+.project-container .project .project-link {
+}
+
+.project-container .project .project-link > .project-description {
+    padding: 2rem;
+    color: var(--white);
+    
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+.project-container .project .project-link > .project-description h2 {
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+}
+.project-container .project .project-link > .project-description p {
+    font-size: var(--heading3-font-size);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}

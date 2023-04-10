@@ -1,0 +1,50 @@
+.map {
+    background: black;
+    height: 320px;
+}
+
+
+.leaflet-control-attribution {
+    display: none;
+}
+
+.location-container.wrapper {
+    width: 100%;
+}
+
+.location-container .map-details {
+    padding-block: 5.125rem;
+}
+
+.location-map{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    background-image: url(/images/location-image.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 43% 150%;
+    background-color: #FDF3F0;
+}
+
+.location .map-details > h2 {
+    color: var(--peach);
+    margin-bottom: 1.875rem;
+}
+
+.location .map-details pre b {
+    font-weight: bold;
+}
+
+.location-map pre {
+    white-space: unset;
+}
+
+.location .address {
+    margin-bottom: 2.0625rem;
+}
+
+.location-map:not(:last-of-type) {
+    margin-bottom:2rem ;
+}

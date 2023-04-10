@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/styles/static.css">
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
     <header>
@@ -24,13 +25,13 @@
             <nav>
                 <ul class="header-menu">
                     <li class="menu-list">
-                        <a href="" class="menu-link">Our Company</a>
+                        <a href="/about.html" class="menu-link">Our Company</a>
                     </li>
                     <li class="menu-list">
-                        <a href="" class="menu-link">Locations</a>
+                        <a href="/location.html" class="menu-link">Locations</a>
                     </li>
                     <li class="menu-list">
-                        <a href="" class="menu-link">Contact</a>
+                        <a href="/Contact-us.html" class="menu-link">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -40,7 +41,49 @@
             </button>
         </div>
     </header>   
-
+    <main>
+        <section class="contact">
+            <div class="contact-container wrapper">
+                <div class="contact-description">
+                    <h1>Contact Us</h1>
+                    <p>Ready to take it to the next level? Let’s talk about your project or idea and find out how we can help your business grow. If you are looking for unique digital experiences that’s relatable to your users, drop us a line.</p>
+                </div>
+                <form
+                    action="https://formspree.io/f/xeqwpalz"
+                    method="POST"
+                >
+                <input class="form-input" type="text" id="name" placeholder="name" name="name">
+              
+                <input class="form-input" type="email" id="email" placeholder="email address" name="_replyto">
+              
+                <input class="form-input" type="tel" id="phone" placeholder="phone" name="phone">
+              
+                    <textarea class="form-input" id="message" placeholder="your message" name="message"></textarea>
+              
+                <input type="submit" value="submit">
+                </form>
+            </div>
+        </section>
+        <section class="location">
+            <div class="location-container wrapper">
+                <div class="locations" id="location1">
+                    <img src="" alt="">
+                    <h2></h2>
+                    <a href=""></a>
+                </div>
+                <div class="locations" id="location2">
+                    <img src="" alt="">
+                    <h2></h2>
+                    <a href=""></a>
+                </div>
+                <div class="locations" id="location3">
+                    <img src="" alt="">
+                    <h2></h2>
+                    <a href=""></a>
+                </div>
+            </div>
+        </section>
+    </main>
    <footer>
         <div class="footer-container wrapper">
             <section class="footer-top">
@@ -52,13 +95,13 @@
                 <nav>
                     <ul>
                         <li class="menu-link">
-                            <a href="">Our Company</a>
+                            <a href="/about.html" class="menu-link">Our Company</a>
                         </li>
                         <li class="menu-link">
-                            <a href="">Locations</a>
+                            <a href="/location.html" class="menu-link">Locations</a>
                         </li>
                         <li class="menu-link">
-                            <a href="">Contact</a>
+                            <a href="/Contact-us.html" class="menu-link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -102,5 +145,6 @@
     </footer>
 
     <script src="main.js" defer></script>
+    <script src="contact.js" defer></script>
 </body>
 </html>
