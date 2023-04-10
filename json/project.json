@@ -1,15 +1,15 @@
 {
     "Web-Design":  {
         "title": "Web Design",
-        "image": "/images/project-1.png"
+        "image": "./images/project-1.png"
     },
     "App-Design":  {
         "title": "App Design",
-        "image": "/images/project-2.png"
+        "image": "./images/project-2.png"
     },
     "Graphic-Design":  {
         "title": "Graphic Design",
-        "image": "/images/project-3.png"
+        "image": "./images/project-3.png"
     }
 
 }
