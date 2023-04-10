@@ -5,17 +5,17 @@ console.log(locations);
 
 const locationDetails = {
     "location1": {
-        "image": "images/canada-photo.png",
+        "image": "./images/canada-photo.png",
         "title": "canada",
         "link": "location.html#location1",
     },
     "location2": {
-        "image": "images/australia-photo.png",
+        "image": "./images/australia-photo.png",
         "title": "australia",
         "link": "location.html#location2",
     },
     "location3": {
-        "image": "images/uk-photo.png",
+        "image": "./images/uk-photo.png",
         "title": "united kingdom",
         "link": "location.html#location3",
     }
