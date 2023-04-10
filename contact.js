@@ -1,26 +1,6 @@
 const formInput = document.querySelectorAll('form > .form-input');
 const formButton = document.querySelector('form > input[type="submit"]')
-const locations = document.querySelectorAll('.locations')
-console.log(locations);
 
-const locationDetails = {
-    "location1": {
-        "image": "./images/canada-photo.png",
-        "title": "canada",
-        "link": "location.html#location1",
-    },
-    "location2": {
-        "image": "./images/australia-photo.png",
-        "title": "australia",
-        "link": "location.html#location2",
-    },
-    "location3": {
-        "image": "./images/uk-photo.png",
-        "title": "united kingdom",
-        "link": "location.html#location3",
-    }
-
-}
 
 console.log(formButton)
 
@@ -63,13 +43,3 @@ formButton.addEventListener('click', (e) => {
 })
 
 
-locations.forEach((locate, index) => {
-   let location = locationDetails[Object.keys(locationDetails)[index]];
-
-
-    locate.querySelector('img').src = location.image;
-    locate.querySelector('h2').innerText = location.title;
-    locate.querySelector('a').href = location.link
-    locate.querySelector('a').innerText = "see location";
-
-})

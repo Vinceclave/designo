@@ -3,10 +3,14 @@ body {
 }
 
 header {
-    background: transparent;
+    background: var(--white);
+    position: relative;
+    z-index: 99999;
 }
 
 .header-container {
+    position: relative;
+    z-index: 2;
     --padding-inline-start:1.875rem ;
     --padding-inline-end: 1.125rem;
     
@@ -25,20 +29,43 @@ header {
 .header-logo img {
     width: 100%;
 }
-
 .header-container nav {
-    position: absolute
-    ;
+    position: absolute;
     width: 100%;
-    background: black;
+    background: var(--black);
     left: 0;
-    top: 10.8%;
-    display: none;
-    z-index: 1;    
+    top: 100%;
+    display: block;
+    padding-block: 3rem;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform 0.5s;
+    
 }
+
+.header-container nav.hide {
+    transform: scaleY(0);
+    transition: 0.2s;
+  }
+
+
+.header-container nav.show {
+    transform: scaleY(1);
+}
+
+
+.header-container  .menu-link {
+    padding-inline: 1.5rem;
+}
+.header-container .menu-link:not(:last-child){
+    margin-bottom: 2.1875rem;
+}
+
 
 .header-container .menu-link a,
 .footer-container .menu-link a {
+    display: block;
+    color: var(--white);
     line-height: 1rem;
 }
 
@@ -46,10 +73,6 @@ header {
     letter-spacing: var(--link-letter-spacing);
 }
 
-
-
-.get-in-touch-cta {
-}
 
 .get-in-touch-container {
     background-image: url(/images/Get-in-touch-bg.png);
@@ -261,3 +284,4 @@ footer {
 .toggle_nav.x-mark:hover .lines::after {
     width: inherit;
 }
+
