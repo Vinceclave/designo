@@ -1,0 +1,46 @@
+.about-container.wrapper,
+.top-main-content-container,
+.bottom-main-content-container {
+    width: 100%;
+}
+
+.about-image-hero img,
+.top-main-content-image img,
+.bottom-main-content-image img {
+    
+    aspect-ratio: 75/64;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+}
+
+.about-description {
+    text-align: center;
+
+    color: var(--white);
+    background: url('../images/about-circle.png') no-repeat 100% 10%/200% 200%;
+    background-color: var(--peach);
+
+    padding-block: 5.3125rem;
+    padding-inline: 1.5rem;
+}
+
+.about-description h1,
+.top-main-content-description h1,
+.bottom-main-content-description h1 {
+    margin-bottom: 2.25rem;
+}
+
+.top-main-content-description,
+.bottom-main-content-description {
+    padding-block: 5.3125rem;
+    padding-inline: 1.5rem;
+    background: url('../images/about-circle2.png') no-repeat center/cover, #FDF3F0;
+
+    text-align: center;
+}
+
+.top-main-content-description h1,
+.bottom-main-content-description h1{
+    color: var(--peach);
+}

@@ -45,7 +45,7 @@ header {
 
 .header-container nav.hide {
     transform: scaleY(0);
-    transition: 0.2s;
+    transition: transform 0.2s;
   }
 
 
@@ -71,6 +71,10 @@ header {
 
 .menu-link a {
     letter-spacing: var(--link-letter-spacing);
+}
+
+.menu-link::after {
+    content: "";
 }
 
 
@@ -212,6 +216,11 @@ footer {
 .footer-container .social-media .links {
     color: var(--peach);
     font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer-container .social-media .links:hover {
+    color: var(--light-peach);
 }
 
 /* mobile toggle nav */
